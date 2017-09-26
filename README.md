@@ -15,12 +15,11 @@ You can:
    devtools::install_github("trambakbanerjee/asus")
    ```
 
-Example
+Usage
 -------
 
 See the included vignette [`demo-asus`](http://htmlpreview.github.com/?https://github.com/trambakbanerjee/asus/blob/master/demo-asus.html) for illustrative examples.
 
 References
 --------
-Adaptive SURE Thresholding with Side Information.  
-Banerjee, T., Mukherjee, G. and Sun, W.
+Adaptive SURE Thresholding with Side Information. Banerjee, T., Mukherjee, G. and Sun, W.
