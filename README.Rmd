@@ -1,0 +1,23 @@
+---
+output:
+  md_document:
+    variant: markdown_github
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, echo = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "README-"
+)
+```
+
+# asus
+
+The goal of asus is to conduct adaptive SURE thresholding using side information.
+
+## Example
+
+See the included vignette `demo-asus` for illustrative examples.
