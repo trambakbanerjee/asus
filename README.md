@@ -22,4 +22,5 @@ See the included vignette [`demo-asus`](http://htmlpreview.github.com/?https://g
 
 References
 --------
-Adaptive Sparse Estimation with Side Information. Banerjee, T., Mukherjee, G. and Sun, W.
+[Adaptive Sparse Estimation with Side Information](http://www-bcf.usc.edu/~wenguans/Papers/ASUS.pdf). 
+Banerjee, T., Mukherjee, G. and Sun, W.
