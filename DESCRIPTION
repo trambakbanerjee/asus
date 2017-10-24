@@ -1,16 +1,18 @@
 Package: asus
-Title: Adaptive SURE Thresholding with Side Information
+Title: Adaptive SURE Thresholding Using Side Information
 Version: 1.0.0
 Authors@R: c(person("Trambak","Banerjee",role=c("aut","cre"),
     email="trambakb@usc.edu"),
     person("Gourab","Mukherjee",role="aut",email="gourab@usc.edu"),
     person("Wenguang","Sun",role="aut",email="wenguans@marshall.usc.edu"))
-Description: Provides the ASUS procedure for shrinkage estimation of a high dimensional sparse parameter.
-Depends: R (>= 3.4.1)
+Description: Provides the ASUS procedure for estimating a high dimensional sparse parameter in the presence of auxiliary data that encode side information on sparsity.
+    It is a robust data combination procedure in the sense that even when pooling non-informative auxiliary data ASUS would be at least as efficient as competing soft thresholding based methods that do not use auxiliary data.
+    For more information, please see the website <http://www-bcf.usc.edu/~wenguans/Papers/ASUS.htm> and the accompanying paper.
+Depends: R (>= 3.4.2)
 License: GPL(>=2)
 Encoding: UTF-8
 LazyData: true
-URL: https://github.com/trambakbanerjee/asus
+URL: https://github.com/trambakbanerjee/asus#asus
 Imports: rwt,
     wavethresh,
     stats,
