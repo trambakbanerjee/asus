@@ -1,7 +1,6 @@
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 asus
 ====
-[![Build Status](https://travis-ci.org/trambakbanerjee/asus.svg?branch=master)](https://travis-ci.org/trambakbanerjee/asus)
 [![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/asus)](https://cran.r-project.org/package=asus)
 ![](http://cranlogs.r-pkg.org/badges/grand-total/asus)
 
@@ -28,5 +27,5 @@ See the included vignette [`demo-asus`](http://htmlpreview.github.com/?https://g
 
 References
 --------
-[Adaptive Sparse Estimation with Side Information](http://www-bcf.usc.edu/~wenguans/Papers/ASUS.pdf).                                     
+[Adaptive Sparse Estimation with Side Information (2018)](https://arxiv.org/pdf/1811.11930.pdf).                                     
 Banerjee, T., Mukherjee, G. and Sun, W. 
