@@ -27,5 +27,5 @@ See the included vignette [`demo-asus`](http://htmlpreview.github.com/?https://g
 
 References
 --------
-[Adaptive Sparse Estimation with Side Information (2018)](https://arxiv.org/pdf/1811.11930.pdf).                                     
-Banerjee, T., Mukherjee, G. and Sun, W. 
+[Banerjee, T., Mukherjee, G. and Sun, W. Adaptive Sparse Estimation with Side Information. Journal of the American Statistical Association (2020), Volume 115, no. 532, Pages 2053-2067](https://www.tandfonline.com/doi/abs/10.1080/01621459.2019.1679639).                                     
+ 
