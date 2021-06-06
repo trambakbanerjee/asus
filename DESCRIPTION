@@ -23,4 +23,3 @@ Suggests: knitr,
 VignetteBuilder: knitr
 
 
-Provides the CASP rule for shrinkage prediction in a high-dimensional,non-exchangeable hierarchical Gaussian models with unknown location as well as unknown spiked covariance structure.
