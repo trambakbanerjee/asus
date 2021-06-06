@@ -1,23 +1,29 @@
-Package: asus
-Title: Adaptive SURE Thresholding Using Side Information
+Package: casp
+Title: Coordinate-wise Adaptive Shrinkage Prediction
 Version: 1.0.0
-Authors@R: c(person("Trambak","Banerjee",role=c("aut","cre"),
-    email="trambakb@usc.edu"),
-    person("Gourab","Mukherjee",role="aut",email="gourab@usc.edu"),
-    person("Wenguang","Sun",role="aut",email="wenguans@marshall.usc.edu"))
-Description: Provides the ASUS procedure for estimating a high dimensional sparse parameter in the presence of auxiliary data that encode side information on sparsity.
-    It is a robust data combination procedure in the sense that even when pooling non-informative auxiliary data ASUS would be at least as efficient as competing soft thresholding based methods that do not use auxiliary data.
-    For more information, please see the website <http://www-bcf.usc.edu/~wenguans/Papers/ASUS.htm> and the accompanying paper.
-Depends: R (>= 3.4.2)
+Authors@R: c(person(given = "Trambak",
+           family = "Banerjee",
+           role = c("aut", "cre"),
+           email = "trambak@ku.edu"),
+           person(given = "Gourab",
+           family = "Mukherjee",
+           role = c("aut"),
+           email = "gourab@usc.edu"),
+           person(given = "Debashis",
+           family = "Paul",
+           role = c("aut"),
+           email = "debpaul@ucdavis.edu"))
+Description: Provides the CASP rule for shrinkage prediction in
+    high-dimensional, non-exchangeable hierarchical Gaussian models 
+    with an unknown location as well as an unknown spiked covariance structure.
+    CASP utilizes the phase transition phenomenon of the sample eigenvalues 
+    and eigenvectors seen in spiked covariance models and improves 
+    upon naive factor model based methodology by using bias-corrected 
+    efficient estimates of quadratic forms involving the covariance matrix 
+    that appear in the Bayes predictive rules.
 License: GPL(>=2)
 Encoding: UTF-8
 LazyData: true
-URL: https://github.com/trambakbanerjee/asus#asus
-Imports: rwt,
-    wavethresh,
-    stats,
-    utils
-RoxygenNote: 6.0.1
-Suggests: knitr,
-    rmarkdown
-VignetteBuilder: knitr
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.1
+URL: https://github.com/trambakbanerjee/casp#casp

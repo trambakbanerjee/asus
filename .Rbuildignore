@@ -1,9 +1,2 @@
-^.*\.Rproj$
+^casp\.Rproj$
 ^\.Rproj\.user$
-^README\.Rmd$
-^README\.md$
-^README-.*\.png$
-^cran-comments\.md$
-^\.travis\.yml$
-
-
