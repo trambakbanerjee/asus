@@ -2,7 +2,6 @@
 #'
 #' SureShrink estimator of a high dimensional sparse parameter from Donoho and Johnstone (1995)
 #'
-#' @import rwt
 #' @import wavethresh
 #' @importFrom stats rnorm
 #'
@@ -171,7 +170,6 @@ ejs <- function(d,v.d){
 #' ASUS procedure for shrinkage estimation of a high dimensional sparse parameter.
 #'
 #' @import wavethresh
-#' @import rwt
 #' @importFrom stats rnorm
 #' @importFrom stats quantile
 #' @importFrom utils combn
@@ -207,7 +205,8 @@ ejs <- function(d,v.d){
 #' s<-rnorm(10,3,0.1)
 #' asus.out<-asus(d,v.d,s)
 #'
-#' @references Banerjee. T, Mukherjee. G and Sun. W (2017). Adaptive Sparse Estimation with Side Information.
+#' @references Banerjee. T, Mukherjee. G and Sun. W. Adaptive Sparse Estimation with Side Information.
+#' Journal of the American Statistical Association 115, no. 532 (2020): 2053-2067.
 #'
 #' @export
 
@@ -316,7 +315,6 @@ asus <- function(d,v.d,s,k=2,m=50){
 #' Estimates the risk of asus when there are k(>2) groups with pre-defined grouping thresholds
 #'
 #' @import wavethresh
-#' @import rwt
 #' @importFrom stats rnorm
 #'
 #' @param d an n vector of primary observations
@@ -341,7 +339,8 @@ asus <- function(d,v.d,s,k=2,m=50){
 #' s<-rnorm(10)
 #' out<-asus.cuts(d,v.d,s,c(0.1,0.5,1))
 #'
-#' @references Banerjee. T, Mukherjee. G and Sun. W (2017). Adaptive Sparse Estimation with Side Information.
+#' @references Banerjee. T, Mukherjee. G and Sun. W. Adaptive Sparse Estimation with Side Information.
+#' Journal of the American Statistical Association 115, no. 532 (2020): 2053-2067.
 #'
 #' @export
 
@@ -365,3 +364,30 @@ asus.cuts<- function(d,v.d,s,cutpoints){
   return(list("mse"=sum(temp)))
 }
 
+#' Soft Thresholding estimator
+#'
+#' Soft thresholds the input signal y with the threshold value thld
+#'
+#' @param y 1D signal to be thresholded
+#' @param thld numeric threshold value
+#'
+#' @return a numeric vector of thresholded values of the same length as y.
+#'
+#' @examples
+#' library(asus)
+#' set.seed(42)
+#' y<-rnorm(10,2,1)
+#' thld<- 3
+#' x<-softTh(y,thld)
+#'
+#' @references
+#' Donoho, David L. "De-noising by soft-thresholding."
+#' IEEE transactions on information theory 41, no. 3 (1995): 613-627.
+#'
+#' @export
+
+softTh <- function(y, thld) {
+  x <- abs(y)
+  x <- sign(y) * (x >= thld) * (x - thld)
+  return(x)
+}
