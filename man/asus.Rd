@@ -46,7 +46,8 @@ asus.out<-asus(d,v.d,s)
 
 }
 \references{
-Banerjee. T, Mukherjee. G and Sun. W (2017). Adaptive Sparse Estimation with Side Information.
+Banerjee. T, Mukherjee. G and Sun. W. Adaptive Sparse Estimation with Side Information.
+Journal of the American Statistical Association 115, no. 532 (2020): 2053-2067.
 }
 \seealso{
 \code{\link{sureshrink}},\code{\link{ejs}},\code{\link{sureshrink.mse}}

@@ -37,7 +37,8 @@ out<-asus.cuts(d,v.d,s,c(0.1,0.5,1))
 
 }
 \references{
-Banerjee. T, Mukherjee. G and Sun. W (2017). Adaptive Sparse Estimation with Side Information.
+Banerjee. T, Mukherjee. G and Sun. W. Adaptive Sparse Estimation with Side Information.
+Journal of the American Statistical Association 115, no. 532 (2020): 2053-2067.
 }
 \seealso{
 \code{\link{asus}},\code{\link{sureshrink}},\code{\link{ejs}},\code{\link{sureshrink.mse}}
