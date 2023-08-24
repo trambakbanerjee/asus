@@ -1,4 +1,3 @@
-asus 1.0.0
--------
+# asus 1.5.0
 
-First version released.
+* Removed dependency on package `rwt` which is no longer active on CRAN.

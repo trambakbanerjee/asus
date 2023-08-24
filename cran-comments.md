@@ -1,21 +1,10 @@
-## New submission
-This is a  new submission. 
-
-## Test environments
-* ubuntu 12.04 (on travis-ci), R 3.4.1
-* win-builder (devel and release)
-
 ## R CMD check results
-There were NO ERRORs, NO WARNINGs. 
 
-There were 2 NOTES:
+0 errors | 0 warnings | 2 notes
 
-* checking CRAN incoming feasibility ... NOTE
-Maintainer: 'Trambak Banerjee <trambakb@usc.edu>'
+* Note 1 is related to dependency on archived package 'rwt'. Version 1.5 of 'asus' does not depend on 'rwt'.
+* Note 2: related to 'lastMikTeXException' due to a MikTeX bug.
 
-This is a harmless note.
+## Maintainer email change
 
-* checking top-level files ... NOTE
-Files 'README.md' or 'NEWS.md' cannot be checked without 'pandoc' being installed.
-
-I can put these in .Rbuildignore but CRAN supports NEWS.md now.
+*The maintainer has moved to new university. Old email "trambakb@usc.edu" not active anymore. 
